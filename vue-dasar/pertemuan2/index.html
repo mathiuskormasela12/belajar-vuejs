@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Menampilkan Data</h1>
+		
+		<!--  
+			====== Belajar Menampilkan Data ======
+
+			Pada Vue Js untuk menampilkan data didalam web
+			kita bisa menggunakan declarative rendering
+			dan juga directive.
+
+			A. Apa Itu Declarative Rendering
+
+			   Declarative Rendering adalah sebuah
+			   cara untuk menampilkan data sebagai
+			   string di dalam web browser.
+					
+				 rumus :
+				 <elementHTML>{{ data }}</elementHTML>
+
+				 contoh :
+				 <p>{{ data }}</p>
+
+			   ket :
+			   Sintaks HTML tidak akan
+			   dieksekusi. Declarative Rendering
+			   ditulis di dalam file index.html
+
+		  B. Apa itu Directive
+
+		     Directive adalah sintaks untuk
+		     memberi arahan atau petunjuk pada
+		     vue js. Salah satu fungsi directive
+		     adalah untuk menampilkan sesuatu 
+		     kelayar. Directive ditulis di dalam
+		     file index.html sebagai attribute dan
+		     nama atributenya selalu di awali
+		     dengan v-jeniDirectivenya.
+
+		     Berikut Beberapa Jenis Directive :
+		     1. v-text
+		        Untuk menampilkan data pada vue js
+		        dalam format string atau text.
+		        Setiap sintaks HTML tidak akan di
+		        eksekusi.
+
+		        rumus :
+		        <elementHTML v-text="datanya"></elementHTML>
+
+		    2. v-html
+		       Untuk menampilkan data dalam vue js
+		       yang dapat merender sintaks HTML.
+
+		       rumus :
+		       <elementHTML v-html="datanya"></elementHTML>
+		-->
+		<!-- Declarative Rendering -->
+		<!-- <div id="app"> {{ message }} </div> -->
+		<!-- <p id="app">
+			<i><b>{{ message }}</b></i>
+		</p> -->
+
+		<!-- Directive Text v-text -->
+		<!-- <div id="app" v-text="message"></div> -->
+
+		<!-- Directive HTML v-html -->
+		<div id="app" v-html="message"></div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

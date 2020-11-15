@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Tipe Data Object Pada Vue Js</h1>
+
+		<div id="app">
+
+			<p>Frameworks :</p>
+			<ol>
+				<li v-for="data in frameworks">
+					<p>Nama : {{ data.nama }}</p>
+					<p>Platform : {{ data.platform }}</p>
+				</li>
+			</ol>
+
+			<p>My Tech</p>
+			<ul type="square">
+				<li v-for="data in language">{{ data }}</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

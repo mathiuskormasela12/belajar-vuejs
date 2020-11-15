@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Bagaimana Method Watch</h1>
+		
+		<div id="app">
+			<!--  
+				=== Belajar v-model ===
+
+				Directive v-model merupakan data binding
+				dua arah dan berfungsi untuk memanggil 
+				sebuah method pada object watch dan
+				menyimpan return value dari method 
+				tersebut kedalam value inputnya.
+			-->
+			<input type="text" v-model="kilometers">
+			<input type="text" v-model="meters">
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

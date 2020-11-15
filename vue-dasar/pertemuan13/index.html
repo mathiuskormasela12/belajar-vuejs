@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Event Handle Pada Vue Js</h1>
+		<!-- 
+			====== Belajar Event Handle Pada Vue Js ======
+
+			Event Handle pada Vue Js adalah
+			inline HTML Atrribute, maksudnya
+			event handler yg di tulis sebagai
+			attribute element.
+
+			Event Handler pada Vue Js tidak hanya
+			dapat memanggil method, tetapi juga
+			untuk mengubah value dari sebuah
+			property.
+
+			fungsi event handler vue js :
+			1. Memanggil method
+			2. Memberi nilai suatu property data
+
+			rumus :
+			v-on:event="method atau kode js"
+			@event="method atau kode js"
+		-->
+		<div id="app">
+			<button v-on:click="message = 'The button has been clicked using v-on:click'">Click</button>
+			<button @click="message = 'The button has been clicked using @click'">Click Me</button>
+			<button @click="showAlert('The button has been clicked using @click with method')">Show Alert</button>
+			<p>{{ message }}</p>
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

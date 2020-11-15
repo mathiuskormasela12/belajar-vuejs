@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Method On</h1>
+		<div id="app">
+			<p>{{ message }}</p>
+			<p>Result of {{ int1 }} + {{ int2 }} is {{ sum }}</p>
+			<p>Result of {{ int1 }} + {{ int2 }} is {{ result }}</p>
+			<button v-on:click="sum2">Show Result use v-on</button>
+			<p>Result of {{ int1 }} + {{ int2 }} is {{result}}</p>
+			<button v-on:click="sum3(2)">Show Result use v-on with parameters</button>
+			<button v-on:click="jikoshoukai('Mathius')">Jikoshoukai kudasai !</button>
+			<p v-html="hasil"></p>
+		</div>  
+		
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Tipe Data Array di Vue Js</h1>
+
+		<div id="app">
+
+			<p>Beloved Frontend Framework : {{ frameworks[0] }}</p>
+
+			<p>Some Javascript Frameworks Below :</p>
+			<ol v-if="frameworks.length > 0">
+				<li v-for="data in frameworks">{{ data }}</li>
+			</ol>
+
+			<label for="add">Add New Framework</label><br><br>
+			<input type="text" placeholder="Write Here...." v-model="content" /><br><br>
+			<button @click="addFramework">Add Framework</button>
+
+			<p>Delete Some Frameworks</p>
+			<ol v-if="frameworks.length > 0">
+				<li v-for="(data, index) in frameworks">
+					<button @click="removeFramework(index)">Remove</button>
+					{{ data }}
+				</li>
+			</ol>
+
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

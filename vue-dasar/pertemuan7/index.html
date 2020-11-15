@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Directive v-model Pada Input Text</h1>
+
+		<!-- 
+			===== Apa itu v-model ? =====
+
+			v-model adalah directive pada
+			Vue Js yg berfungsi untuk melakukan
+			two way data binding.
+
+			berikut fungsi-fungsi v-model :
+			1. Memanggil method dari object watch 
+			   dan mengambil hasil return method
+			   tersebut dan memasukannya sebagaia
+			   value suatu input.
+			2. Untuk menampilkan data
+			3. Untuk melakukan two way data binding
+		-->
+		<div id="app">
+			<input type="text" v-model="message">
+			<p>{{ message }}</p>
+
+			<input type="text" v-model="nama">
+			<p v-if="nama !== ''">Halo nama saya {{ nama }}</p>
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

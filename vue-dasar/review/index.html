@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Review Vue Js</h1>
+		<div id="root">
+			<!-- Declarative Rendering untuk mencetak 
+			data pada Vue Js sebagai string -->
+			<!-- {{ message }} -->
+			<!-- Directive berfungsi untuk memberi arahan di vue js -->
+			<!-- v-text untuk menampilkan data dalam bentuk string -->
+			<p v-text="message"></p>
+			<!-- v-html untuk menampilkan data dalam bentuk html -->
+			<p v-html="message"></p>
+			<p v-if="nama">{{ nama }}</p>
+			<p v-else-if="nama === null">Kosong</p>
+			<p v-else="nama">Undefined</p>
+			<p>Hasil dari {{ x }} x {{ y }} adalah {{ kalikan }}</p>
+			<button v-on:click="tambahkan('hasilnya adalah ')">Click Me</button>
+			<p>{{ baru }}</p>
+			<input type="text" v-model="mulai">
+			{{ mulai }}
+
+			<input type="text" v-model="wk">
+			{{ wk }}
+			<textarea v-model="alamat" cols="30" rows="10"></textarea>
+			<p style="white-space:pre-line">
+				{{ alamat }}
+			</p>
+
+			<label for="vue">
+				<input type="checkbox" id="vue" value="Vue Js" v-model="fm" name="coos">
+				Vue Js
+			</label>
+			<label for="react">
+				<input type="checkbox" id="react" value="React Js" v-model="fm" name="coos">
+				React Js
+			</label>
+
+			<ol v-if="fm.length > 0">
+				<li v-for="data in fm">{{ data }}</li>
+			</ol>
+
+			<label for="javascript">
+				<input type="radio" name="bahasa" v-model="bahasa" id="javascript" value="Javascript">
+				Javascript
+			</label>
+			<label for="python">
+				<input type="radio" name="bahasa" v-model="bahasa" id="python" value="Python">
+				Python
+			</label>
+
+			{{ bahasa }}
+
+			<select v-model="os" multiple>
+				<option value="Linux Mint">Linux Mint</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Mac OS">Mac OS</option>
+				<option value="Windows 10">Windows 10</option>
+			</select>
+
+			<ol v-if="os.length > 0">
+				<li v-for="x in os">{{ x }}</li>
+			</ol>
+
+		</div>
+		
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

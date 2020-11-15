@@ -1,0 +1,24 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "judul": "Belajar Vue Js dasar",
+      "content": "Vue Js adalah sebuah Framework Javascript untuk membangun user interface"
+    },
+    {
+      "id": 2,
+      "judul": "Belajar Node Js",
+      "content": "Node js adalah platform untuk menjalankan Javascript di sisi server"
+    },
+    {
+      "id": 3,
+      "judul": "Belajar Mysql",
+      "content": "Mysql adalah Database Management System yang berfungsi untuk menyimpan data-data"
+    },
+    {
+      "judul": "Belajar React Native",
+      "content": "React Native adalah sebuah Framework Javascript untuk membuat mobile apps",
+      "id": 4
+    }
+  ]
+}

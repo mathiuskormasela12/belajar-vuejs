@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Key Modifier</h1>
+		
+		<!--  
+			======== Belajar Key Modifier ========
+
+			Key Modifier adalah event handler
+			yang akan mengeksekusi perintah atau
+			method ketika kita menekan sebuah 
+			tombol pada keyboard.
+
+			a. Untuk menjalankan kode ketika
+			   tombol esc di tekan.
+			   v-on:keyup.esc="kode"
+			   @keyup.esc="kode"
+			b. Untuk menjalankan kode ketika
+			   tombol enter ditekan.
+			   v-on:keyup.enter="kode"
+			   @keyup.enter="kode"
+			c. Untuk menjalankan kode ketika
+			   tombol up di tekan
+			   v-on:keyup.up="kode"
+			   @keyup.up="kode"
+			d. Untuk menjalankan kode ketika
+			   tombol down di tekan
+			   v-on:keyup.down="kode"
+			   @keyup.down="kode"
+			e. Untuk menjalankan kode ketika
+			   tombol huruf a ditekan
+			   v-on:keyup.65="kode"
+			   @keyup.65="kode"
+
+		-->
+
+		<div id="app">
+			<input type="text" v-on:keyup.enter="message = 'You press Enter key'">
+			<br>
+			<br>
+			<input type="text" 
+				@keyup.esc="pressEsc"
+				@keyup.up="pressUp"
+				@keyup.down="pressDown"
+				@keyup.65="pressA"
+				type="text" 
+			/>
+
+			<br>
+			<p>{{ message }}</p>
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>

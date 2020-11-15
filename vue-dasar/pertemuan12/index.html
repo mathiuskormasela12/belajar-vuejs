@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Belajar Vue Js Dasar</title>
+	</head>
+	<body>
+		
+		<h1>Belajar Binding Attribut HTML</h1>
+
+		<!--  
+			======= Belajar Binding Attribute HTML =======
+
+			Binding Attribute HTML berfungsi untuk
+			membuat value dari setiap atribute html
+			menjadi dinamis.
+
+			rumus :
+			v-bind:namaAttributenya="data"
+		-->
+
+		<div id="root">
+			<img v-bind:src="imgFile"	alt="Fujiden" width="200" height="120" />
+			<a v-bind:href="link" v-bind:target="blank">Vue Js</a>
+			<!-- Binding value dari sebuah property CSS -->
+			<!-- tanda curly bracket untuk ngasih tau Vue bahwa didalamnya itu ada string biasa dan data dari object data -->
+			<p v-bind:style="{color: pColor}">Hello World</p>
+			<p v-bind:style="pStyle">Hello Vue Js</p>
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/vue.js"></script> 
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>
